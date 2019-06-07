@@ -104,7 +104,7 @@
     </div>
 
     <script type="text/javascript">
-      $('ul.main-menu li').click(function(e) {
+      $('ul.main-menu li').on('click', function(e) {
             e.preventDefault();
             if($(this).siblings('li').find('ul.submenu:visible').length) {
                   $('ul.submenu').slideUp('normal');
